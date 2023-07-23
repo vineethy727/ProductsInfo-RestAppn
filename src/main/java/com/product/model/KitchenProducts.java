@@ -23,7 +23,7 @@ public class KitchenProducts implements Serializable {
 	@GeneratedValue(strategy=GenerationType.AUTO)
 	private Integer prodid;
 	
-	@Column(name="ProductName", unique=true, columnDefinition="varchar(40)")
+	@Column(columnDefinition="varchar(40)")
 	private String prodname;
 	
 	@Column(name="ProductCompanyName", unique=true, columnDefinition="varchar(40)")
